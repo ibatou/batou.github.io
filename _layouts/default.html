@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  {% seo %}
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <nav>
+      <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Accueil</a>
+      <a href="/portfolio" {% if page.url == "/portfolio/" %}class="active"{% endif %}>Portfolio</a>
+      <a href="/cv" {% if page.url == "/cv/" %}class="active"{% endif %}>CV</a>
+      <a href="/about" {% if page.url == "/about/" %}class="active"{% endif %}>À propos</a>
+      <a href="/contact" {% if page.url == "/contact/" %}class="active"{% endif %}>Contact</a>
+    </nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>© {{ site.time | date: '%Y' }} {{ site.author.name }}. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+title: Portfolio d'Issmail Batou
+description: Ingénieur d’études et développement - Spécialisé en informatique, ingénierie spatiale et support technique
+baseurl: ""
+url: "https://username.github.io"
+theme: null
+permalink: /:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+author:
+  name: Issmail Batou
+  email: batou.issmail@gmail.com
